@@ -1,0 +1,501 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 300;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+html{
+    background-color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    color: #555;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.827), rgba(0, 0, 0, 0.713)), url(img/header_background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+header .row{
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    padding: 0;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 240%;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+
+.hero-text-box{
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    left: 10%;
+}
+
+.btn:link, 
+.btn:visited,
+input[type="submit"]{
+    text-decoration: none;
+    font-weight: 300;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 25px;
+    margin: 10px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type="submit"]{
+    background-color: #e67e22;
+    color: white;
+}
+
+input[type="submit"]{
+    border: 0;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+
+.btn:hover,
+.btn:active,
+input[type="submit"]:hover{
+    background-color: #b9671e;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+    color: white;
+    background-color: #e67e22;
+}
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo{
+    height: 70px;
+    width: auto;
+    border-radius: 50px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.main-nav{
+    display: flex;
+    padding-top: 50px;
+    list-style: none;
+}
+
+.main-nav li{
+    padding-right: 55px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    text-decoration: none;
+    padding-bottom: 8px;
+    color: rgba(255, 255, 255, 0.768);
+    font-size: 90%;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #e67e22;
+}
+
+.section-features{
+    margin: 0 3rem;
+    padding: 80px 0;
+}
+
+h2{
+    font-weight: 300;
+    font-size: 180%;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    word-spacing: 2px;
+}
+
+h2::after{
+    display: block;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    height: 2px;
+    margin-top: 30px;
+    background-color: #e67e22;
+}
+
+.long-copy{
+    line-height: 145%;
+    width: 80%;
+    margin-left: 15%;
+    margin-bottom: 30px;
+}
+
+.box{
+    padding: 1%;
+}
+
+.box h3{
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 110%;
+    letter-spacing: 1px;
+}
+
+.box p{
+    font-size: 80%;
+    font-weight: 300;
+    line-height: 145%;
+}
+
+.feature-icons{
+    font-size: 350%;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
+.section-meals{
+    margin: 0;
+}
+
+.meals-showcase{
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.meals-showcase li{
+    width: 25%;
+}
+
+.meal-img img{
+    width: 100%;
+    display: flex;
+    height: auto;
+    transition: transform 0.3s, filter 0.3s;
+    filter: brightness(60%);
+}
+
+.meal-img img:hover{
+    transform: scale(1.05);
+    filter: brightness(100%);
+}
+
+.section-steps .row:first-of-type{margin: 5% 0 0 0;}
+.steps-box:first-child{margin-top: 0;}
+
+.section-steps h2{
+    margin: 0 auto;
+}
+
+.steps-box>img{
+    width: 65%;
+    height: auto;
+    margin-left: 10vw;
+    margin-top: 6vh;
+    filter: brightness(90%);
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.step-box:first-child{
+    text-align: center;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.steps-box:last-child{
+    margin-top: 70px;
+    text-align: left;
+}
+.work-step{
+    margin-bottom: 50px;
+    margin-left: 50px;
+    display: flex;
+    gap: 30px;
+}
+.work-step:last-of-type{
+    margin-bottom: 70px;
+}
+
+.work-step h5{
+    background-color: #e67d22a5;
+    display: flex;
+    height: 55px;
+    width: 55px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 3px solid #be681c;
+    color: #b55e13;
+    font-weight: bold;
+    font-size: 125%;
+}
+.work-step p{
+    line-height: 275%;
+}
+
+.btn-app{margin-bottom: 5%;}
+.btn-app a img{
+    display: inline-block;
+    width: 20%;
+    margin-right: 10px;
+    margin-left: 90px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px #858585;
+}
+
+.cities-section{
+    padding: 8% 5%;
+}
+.cities-section .row h2{
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.city-info>img{
+    width: 12rem;
+    height: auto;
+}
+
+.icon-small{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    margin-top: 5px;
+    margin-right: 8px;
+}
+.city-feature a:link,
+a:visited{
+    text-decoration: none;
+    color: #e67e22;
+    border-bottom: 1px solid #e67e22;
+    padding: 1px;
+    transition: color 0.4s, border-bottom 0.4s;
+}
+
+.city-feature a:hover,
+a:active{
+    color: #666;
+    border-bottom: 1px solid transparent;
+}
+
+.testimonials{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEl05F5JrOQMJb6iDsPYkaYiSx_7EZmc_d4g&s);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 8% 2% 1% 2%;
+    position: relative;
+}
+
+blockquote{
+    font-style: italic;
+    padding: 2%;
+    line-height: 145%;
+    margin-top: 40px;
+}
+
+cite img{
+    display: block;
+    height: 45px;
+    border-radius: 50%;
+    width: 45px;
+    margin: 4% 9%;
+}
+
+.section-plans{
+    background-color: #f1f1f1;
+    padding: 8% 0;
+}
+
+.section-plans .row .plan-box{
+    transform: translateX(-3%);
+}
+
+.plan-box{
+    background-color: white;
+    padding: 9%;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px #cbcbcb;
+    width: 120%;
+}
+.plan-box div{
+    padding: 10px;
+}
+
+.plan-box div h3{
+    font-weight: 600;
+    font-size: 130%;
+    margin-bottom: 5%;
+}
+
+.plan-box div ul{
+    list-style: none;
+}
+.plan-box li{
+    font-size: 90%;
+    padding: 4px 0;
+}
+
+.check{
+    color: #e67e22;
+}
+
+.plan-price{
+    font-size: 200%;
+    color: #e67e22;
+    font-weight: 400;
+}
+.plan-price span{
+    font-size: 60%;
+}
+
+.price-per-meal{
+    font-size: 80%;
+    line-height: 200%;
+}
+.form-section{
+    padding: 8%;
+    /* background-color: #f4f4f4; */
+}
+form{
+    width: 60%;
+}
+
+.form-item{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.form-item label{
+    flex: 0 0 30%;
+    font-size: 110%;
+}
+
+.form-item input,
+.form-item select,
+.form-item textarea{
+    flex: 1;
+    padding: 6px;
+}
+.form-item textarea{
+    height: 120px;
+}
+.form-item input[type="checkbox"] {
+    align-items: left;
+}
+
+.form-item input[type="submit"]{
+    margin-left: 50px;  
+}
+button{
+    margin-left: 30%;
+    margin-top: 10px;
+}
+
+footer{
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+}
+footer .row{
+    justify-content: space-between;
+}
+
+.footer-nav li{
+    list-style: none;
+}
+.social-links li{
+    list-style: none;
+}
+
+.footer-nav li,
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+    font-size: large;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited{
+    text-decoration: none;
+    color: #666;
+}
+
+.footer-nav li a:hover{
+    color: #c9c9c9;
+    font-weight: 400;
+}
+
+footer p{
+    margin: 15px auto 0 auto;
+    color: #888;
+    padding: 20px 60px 0px 60px;
+    font-size: 90%;
+    border-top: 1px solid #414141;
+}
+.fb{
+    transition: color 0.3s;
+}
+.fb:hover{
+    color: rgb(19, 117, 255);
+}
+.tw{
+    transition: color 0.3s;
+}
+.tw:hover{
+    color: rgb(19, 165, 255);
+}
+.ggl{
+    transition: color 0.3s;
+}
+.ggl:hover{
+    color: green;
+}
+.ins{
+    transition: color 0.3s;
+}
+.ins:hover{
+    color: rgb(229, 21, 100);
+}
